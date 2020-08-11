@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
   # -------------
   # Remove / Destroy tasks directly from the list
-  delete 'taks/:id', to: 'tasks#destroy'
+  delete 'tasks/:id', to: 'tasks#destroy'
 
   # -------------
   # We want to read / find one specific task - use the id to open a new page with the details of the task
