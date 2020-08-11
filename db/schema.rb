@@ -10,9 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_08_11_101625) do
+ActiveRecord::Schema.define(version: 2020_08_11_132209) do
 
-  create_table "task_managers", force: :cascade do |t|
+  create_table "tasks", force: :cascade do |t|
     t.string "title"
     t.text "details"
     t.boolean "completed", default: false

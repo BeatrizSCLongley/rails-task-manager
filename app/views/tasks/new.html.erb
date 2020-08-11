@@ -1,0 +1,15 @@
+<h1>New Task</h1>
+
+<!-- (@task) represents the instance of model -->
+<%= form_for (@task) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+  <%= f.label :details %>
+  <%= f.text_field :details %>
+  <br>
+  <%= f.submit %>
+<% end %>
+
+<!-- You can add f.date_field or f.date_select for a date field on the form-->
+<!-- You can add f.collection_select to add a field of options on the form - if there are options for a particular parameter -->
